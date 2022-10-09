@@ -148,8 +148,9 @@ namespace WindowsFormsApp7
 
         protected void Level_1(object sender, EventArgs e)
         {
-            Level_1 first = new Level_1();
-            first.Show();
+            Form2 form = new Form2();
+            this.Hide();
+            form.Show();
         }
         protected void Level_2(object sender, EventArgs e)
         {

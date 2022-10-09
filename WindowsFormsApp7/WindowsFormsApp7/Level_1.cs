@@ -12,6 +12,14 @@ namespace WindowsFormsApp7
 {
     public partial class Level_1 : Form
     {
+        public int cas;
+
+        public Level_1(int ACas)
+        {
+            InitializeComponent();
+            LoadPictures();
+            cas = ACas;
+        }
         List<int> numbers = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         string firstChoice;
         string secondChoice;
@@ -19,15 +27,9 @@ namespace WindowsFormsApp7
         List<PictureBox> pictures = new List<PictureBox>();
         PictureBox picA;
         PictureBox picB;
-        int totalTime = 30;
+        int totalTime = cas;
         int countDownTime;
         bool gameOver = false;
-
-    public Level_1()
-        {
-            InitializeComponent();
-            LoadPictures();
-        }
 
         private void TimerEvent(object sender, EventArgs e)
         {

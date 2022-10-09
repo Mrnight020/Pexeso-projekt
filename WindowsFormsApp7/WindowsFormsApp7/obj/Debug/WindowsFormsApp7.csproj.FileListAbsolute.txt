@@ -31,3 +31,16 @@ C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso projekt\WindowsFormsApp7\Windows
 C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso projekt\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
 C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso projekt\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
 C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso projekt\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe.config
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.pdb
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.AssemblyReference.cache
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.SuggestedBindingRedirects.cache
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Level_1.resources
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\TOMAS\source\repos\Nová složka\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form2.resources
