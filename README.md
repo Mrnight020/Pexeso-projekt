@@ -1,2 +1,2 @@
 # Pexeso-projekt
-Prostě pexeso :D
+Prostě pexeso s profesionálním týmem Tomáše Růžička a ostatních:D
