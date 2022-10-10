@@ -13,6 +13,7 @@ namespace WindowsFormsApp7
     public partial class Level_1 : Form
     {
         public int cas;
+        bool hard = false;
 
         public Level_1(int ACas)
         {
@@ -185,7 +186,7 @@ namespace WindowsFormsApp7
             {
                 GameOver("Great Work, You Win!!!!");
             }
-
+            hard = true;
         }
 
         private void GameOver(string msg)
@@ -193,6 +194,13 @@ namespace WindowsFormsApp7
             GameTimer.Stop();
             gameOver = true;
             MessageBox.Show(msg + " Click Restart to Play Again.", "Moo Says: ");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 form = new Form1(hard);
+            form.Show();
         }
     }
 }

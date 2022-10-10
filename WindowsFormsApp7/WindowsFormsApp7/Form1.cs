@@ -12,9 +12,16 @@ namespace WindowsFormsApp7
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public bool Alvl_1 = false;
+        public bool Alvl_2 = false;
+        public bool Alvl_3 = false;
+        public bool Alvl_4 = false;
+
+
+        public Form1(bool Ahard)
         {
             InitializeComponent();
+            Alvl_1 = Ahard; 
         }
         bool Potvrzení_vygenerování = false;
 
@@ -154,8 +161,11 @@ namespace WindowsFormsApp7
         }
         protected void Level_2(object sender, EventArgs e)
         {
-            Level_2 second = new Level_2();
-            second.Show();
+            if(Alvl_1 == false)
+            {
+                Level_2 second = new Level_2();
+                second.Show();
+            }
         }
         protected void Level_3(object sender, EventArgs e)
         {
