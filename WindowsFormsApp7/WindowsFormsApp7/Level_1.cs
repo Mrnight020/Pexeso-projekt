@@ -19,6 +19,7 @@ namespace WindowsFormsApp7
             InitializeComponent();
             LoadPictures();
             cas = ACas;
+            this.BackColor = Color.Black;
         }
         List<int> numbers = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         string firstChoice;
@@ -27,12 +28,18 @@ namespace WindowsFormsApp7
         List<PictureBox> pictures = new List<PictureBox>();
         PictureBox picA;
         PictureBox picB;
-        int totalTime;
         int countDownTime;
         bool gameOver = false;
+        bool neco = false;
 
         private void TimerEvent(object sender, EventArgs e)
         {
+            if(neco == false)
+            {
+                countDownTime = cas;
+                neco = true;
+            }
+            
             countDownTime--;
 
             lblTimeLeft.Text = "Time Left: " + countDownTime;
@@ -128,8 +135,6 @@ namespace WindowsFormsApp7
 
         private void RestartGame()
         {
-            totalTime = cas;
-
             // randomise the original list
             var randomList = numbers.OrderBy(x => Guid.NewGuid()).ToList();
             // assign the random list to the original
@@ -143,10 +148,10 @@ namespace WindowsFormsApp7
 
             tries = 0;
             lblStatus.Text = "Mismatched: " + tries + " times.";
-            lblTimeLeft.Text = "Time Left: " + totalTime;
+            lblTimeLeft.Text = "Time Left: " + cas;
             gameOver = false;
             GameTimer.Start();
-            countDownTime = totalTime;
+            countDownTime = cas;
 
         }
 
