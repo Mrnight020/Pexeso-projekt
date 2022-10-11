@@ -61,7 +61,7 @@ namespace WindowsFormsApp7
                 Level1.Top = 90;
                 Level1.Left = 95;
                 Level1.Font = SmallFont;
-                Level1.Text = "Tutorial";
+                Level1.Text = "Speedrun";
                 Level1.Size = new Size(150, 75);
                 Level1.ForeColor = Color.Red;
 
@@ -70,7 +70,7 @@ namespace WindowsFormsApp7
                 Level2.Top = 180;
                 Level2.Left = 95;
                 Level2.Font = SmallFont;
-                Level2.Text = "level 1";
+                Level2.Text = "LimitlessTime";
                 Level2.Size = new Size(150, 75);
                 Level2.ForeColor = Color.Red;
 
@@ -190,6 +190,7 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(359, 500);
             label1.Hide();
             label2.Hide();
             button1.Hide();

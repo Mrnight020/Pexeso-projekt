@@ -13,7 +13,6 @@ namespace WindowsFormsApp7
     public partial class Level_1 : Form
     {
         public int cas;
-        bool hard = false;
 
         public Level_1(int ACas)
         {
@@ -36,12 +35,12 @@ namespace WindowsFormsApp7
 
         private void TimerEvent(object sender, EventArgs e)
         {
-            if(neco == false)
+            
+            if (neco == false)
             {
                 countDownTime = cas;
                 neco = true;
             }
-            
             countDownTime--;
 
             lblTimeLeft.Text = "Time Left: " + countDownTime;
@@ -58,12 +57,8 @@ namespace WindowsFormsApp7
                     }
                 }
             }
+            
 
-        }
-
-        private void RestartGameEvent(object sender, EventArgs e)
-        {
-            RestartGame();
         }
 
         private void LoadPictures()
@@ -134,7 +129,10 @@ namespace WindowsFormsApp7
                 CheckPictures(picA, picB);
             }
         }
-
+        private void RestartGameEventButtom(object sender, EventArgs e)
+        {
+            RestartGame();
+        }
         private void RestartGame()
         {
             // randomise the original list
@@ -187,7 +185,6 @@ namespace WindowsFormsApp7
             {
                 GameOver("Great Work, You Win!!!!");
             }
-            hard = true;
         }
 
         private void GameOver(string msg)

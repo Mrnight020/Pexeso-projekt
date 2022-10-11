@@ -41,32 +41,34 @@
             this.btnRestart.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRestart.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold);
             this.btnRestart.ForeColor = System.Drawing.Color.Red;
-            this.btnRestart.Location = new System.Drawing.Point(212, 11);
-            this.btnRestart.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRestart.Location = new System.Drawing.Point(283, 14);
+            this.btnRestart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRestart.Name = "btnRestart";
-            this.btnRestart.Size = new System.Drawing.Size(154, 68);
+            this.btnRestart.Size = new System.Drawing.Size(205, 84);
             this.btnRestart.TabIndex = 0;
-            this.btnRestart.Text = "Restart";
+            this.btnRestart.Text = "Start/Restart";
             this.btnRestart.UseVisualStyleBackColor = false;
-            this.btnRestart.Click += new System.EventHandler(this.RestartGameEvent);
+            this.btnRestart.Click += new System.EventHandler(this.RestartGameEventButtom);
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(249, 114);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblStatus.ForeColor = System.Drawing.Color.Red;
+            this.lblStatus.Location = new System.Drawing.Point(279, 132);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(97, 13);
+            this.lblStatus.Size = new System.Drawing.Size(170, 20);
             this.lblStatus.TabIndex = 1;
             this.lblStatus.Text = "Match or Mismatch";
             // 
             // lblTimeLeft
             // 
             this.lblTimeLeft.AutoSize = true;
-            this.lblTimeLeft.Location = new System.Drawing.Point(261, 143);
-            this.lblTimeLeft.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTimeLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTimeLeft.ForeColor = System.Drawing.Color.Red;
+            this.lblTimeLeft.Location = new System.Drawing.Point(295, 168);
             this.lblTimeLeft.Name = "lblTimeLeft";
-            this.lblTimeLeft.Size = new System.Drawing.Size(68, 13);
+            this.lblTimeLeft.Size = new System.Drawing.Size(121, 20);
             this.lblTimeLeft.TabIndex = 2;
             this.lblTimeLeft.Text = "Time left : 30";
             // 
@@ -80,9 +82,10 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(212, 178);
+            this.button1.Location = new System.Drawing.Point(283, 219);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 30);
+            this.button1.Size = new System.Drawing.Size(205, 37);
             this.button1.TabIndex = 3;
             this.button1.Text = "Ukončit";
             this.button1.UseVisualStyleBackColor = false;
@@ -90,17 +93,19 @@
             // 
             // Level_1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 316);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(499, 389);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTimeLeft);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnRestart);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Level_1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level_1";
             this.ResumeLayout(false);
             this.PerformLayout();
