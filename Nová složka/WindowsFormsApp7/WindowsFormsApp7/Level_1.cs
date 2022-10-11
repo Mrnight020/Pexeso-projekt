@@ -27,7 +27,7 @@ namespace WindowsFormsApp7
         List<PictureBox> pictures = new List<PictureBox>();
         PictureBox picA;
         PictureBox picB;
-        int totalTime = cas;
+        int totalTime;
         int countDownTime;
         bool gameOver = false;
 
@@ -128,6 +128,7 @@ namespace WindowsFormsApp7
 
         private void RestartGame()
         {
+            totalTime = cas;
             // randomise the original list
             var randomList = numbers.OrderBy(x => Guid.NewGuid()).ToList();
             // assign the random list to the original

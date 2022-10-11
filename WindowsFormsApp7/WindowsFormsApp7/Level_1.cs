@@ -22,6 +22,7 @@ namespace WindowsFormsApp7
             cas = ACas;
             this.BackColor = Color.Black;
         }
+
         List<int> numbers = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         string firstChoice;
         string secondChoice;
@@ -199,7 +200,7 @@ namespace WindowsFormsApp7
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 form = new Form1(hard);
+            Form1 form = new Form1();
             form.Show();
         }
     }

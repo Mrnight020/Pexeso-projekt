@@ -18,10 +18,10 @@ namespace WindowsFormsApp7
         public bool Alvl_4 = false;
 
 
-        public Form1(bool Ahard)
+        public Form1()
         {
             InitializeComponent();
-            Alvl_1 = Ahard; 
+ 
         }
         bool Potvrzení_vygenerování = false;
 
@@ -190,47 +190,45 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked)
-            {
-                label1.Hide();
-                label2.Hide();
-                checkBox1.Hide();
-                button1.Hide();
-                this.BackColor = System.Drawing.Color.Black;
+            label1.Hide();
+            label2.Hide();
+            button1.Hide();
+            this.BackColor = System.Drawing.Color.Black;
 
-                this.Controls.Add(Novy_Label);
-                Novy_Label.Text = "MENU";
-                Novy_Label.Location = new Point(125, 10);
-                Novy_Label.ForeColor = Color.White;
-                Novy_Label.Font = SmallFont;
+            this.Controls.Add(Novy_Label);
+            Novy_Label.Text = "MENU";
+            Novy_Label.Location = new Point(125, 10);
+            Novy_Label.ForeColor = Color.White;
+            Novy_Label.Font = SmallFont;
 
-                this.Controls.Add(Novy_button);
-                Novy_button.Click += new EventHandler(Fucking_button_Click1);
-                Novy_button.Top = 90;
-                Novy_button.Left = 95;
-                Novy_button.Font = SmallFont;
-                Novy_button.Text = "Start";
-                Novy_button.Size = new Size(150, 75);
-                Novy_button.ForeColor = Color.Red;
+            this.Controls.Add(Novy_button);
+            Novy_button.Click += new EventHandler(Fucking_button_Click1);
+            Novy_button.Top = 90;
+            Novy_button.Left = 95;
+            Novy_button.Font = SmallFont;
+            Novy_button.Text = "Start";
+            Novy_button.Size = new Size(150, 75);
+            Novy_button.ForeColor = Color.Red;
 
-                this.Controls.Add(Novy_button2);
-                Novy_button2.Click += new EventHandler(Fucking_button_Click2);
-                Novy_button2.Top = 190;
-                Novy_button2.Left = 95;
-                Novy_button2.Font = SmallFont;
-                Novy_button2.Text = "Settings";
-                Novy_button2.Size = new Size(150, 75);
-                Novy_button2.ForeColor = Color.Red;
+            this.Controls.Add(Novy_button2);
+            Novy_button2.Click += new EventHandler(Fucking_button_Click2);
+            Novy_button2.Top = 190;
+            Novy_button2.Left = 95;
+            Novy_button2.Font = SmallFont;
+            Novy_button2.Text = "Settings";
+            Novy_button2.Size = new Size(150, 75);
+            Novy_button2.ForeColor = Color.Red;
 
-                this.Controls.Add(Novy_button3);
-                Novy_button3.Click += new EventHandler(Fucking_button_Click3);
-                Novy_button3.Top = 290;
-                Novy_button3.Left = 95;
-                Novy_button3.Font = SmallFont;
-                Novy_button3.Text = "Exit";
-                Novy_button3.Size = new Size(150, 75);
-                Novy_button3.ForeColor = Color.Red;
-            }
+            this.Controls.Add(Novy_button3);
+            Novy_button3.Click += new EventHandler(Fucking_button_Click3);
+            Novy_button3.Top = 290;
+            Novy_button3.Left = 95;
+            Novy_button3.Font = SmallFont;
+            Novy_button3.Text = "Exit";
+            Novy_button3.Size = new Size(150, 75);
+            Novy_button3.ForeColor = Color.Red;
+            
         }
+
     }
 }
