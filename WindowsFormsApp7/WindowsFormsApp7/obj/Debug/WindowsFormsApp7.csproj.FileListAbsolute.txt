@@ -82,3 +82,16 @@ C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso lol\WindowsFormsApp7\WindowsForm
 C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso lol\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
 C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso lol\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
 C:\Users\A\OneDrive\Dokumenty\3.Ročník\pexeso lol\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe.config
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.pdb
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.AssemblyReference.cache
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.SuggestedBindingRedirects.cache
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form1.resources
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form2.resources
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Level_1.resources
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Properties.Resources.resources
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.GenerateResource.cache
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
+C:\Users\stulh\Source\Repos\Pexeso-projektweqwe\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb

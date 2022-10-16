@@ -97,6 +97,7 @@ namespace WindowsFormsApp7
             RestartGame();
         }
 
+        int picture_counter = 0;
         private void NewPic_Click(object sender, EventArgs e)
         {
             if (gameOver)
@@ -117,13 +118,19 @@ namespace WindowsFormsApp7
             else if (secondChoice == null)
             {
                 picB = sender as PictureBox;
+                if (picture_counter == (((pictures.Count/2) - 1)) && picB.Image == null)
+                {
+                    picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
+                    MessageBox.Show("Winner winner chicken dinner");
+                }
+
 
                 if (picB.Tag != null && picB.Image == null)
                 {
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
                     secondChoice = (string)picB.Tag;
                 }
-            }
+            }   
             else
             {
                 CheckPictures(picA, picB);
@@ -139,6 +146,7 @@ namespace WindowsFormsApp7
             var randomList = numbers.OrderBy(x => Guid.NewGuid()).ToList();
             // assign the random list to the original
             numbers = randomList;
+            picture_counter = 0;
 
             for (int i = 0; i < pictures.Count; i++)
             {
@@ -161,6 +169,7 @@ namespace WindowsFormsApp7
             {
                 A.Tag = null;
                 B.Tag = null;
+                picture_counter++;
             }
             else
             {
@@ -177,13 +186,6 @@ namespace WindowsFormsApp7
                 {
                     pics.Image = null;
                 }
-            }
-
-            // now lets check if all of the items have been solved
-
-            if (pictures.All(o => o.Tag == pictures[0].Tag))
-            {
-                GameOver("Great Work, You Win!!!!");
             }
         }
 
