@@ -166,7 +166,9 @@ namespace WindowsFormsApp7
         }
         protected void Level_2(object sender, EventArgs e)
         {
-
+            Form3 form = new Form3();
+            this.Hide();
+            form.Show();
         }
         //protected void Level_3(object sender, EventArgs e)
         //{

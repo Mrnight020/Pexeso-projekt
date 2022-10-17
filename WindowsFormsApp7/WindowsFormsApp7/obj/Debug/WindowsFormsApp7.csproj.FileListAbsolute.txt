@@ -120,3 +120,4 @@ C:\Users\stulh\Source\Repos\Pexeso-projekt5474\WindowsFormsApp7\WindowsFormsApp7
 C:\Users\stulh\Source\Repos\Pexeso-projekt5474\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe.config
 C:\Users\stulh\Source\Repos\Pexeso-projekt5474\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.exe
 C:\Users\stulh\Source\Repos\Pexeso-projekt5474\WindowsFormsApp7\WindowsFormsApp7\bin\Debug\WindowsFormsApp7.pdb
+C:\Users\stulh\Source\Repos\Pexeso-projekt5474\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form3.resources
