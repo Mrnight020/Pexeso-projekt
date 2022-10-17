@@ -8,23 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
+using System.Threading;
 
 namespace WindowsFormsApp7
 {
     public partial class Form1 : Form
     {
         private SoundPlayer _soundPlayer;
+        private SoundPlayer _moo;
         public int lvl2 = 0;
         public int lvl3 = 0;
         public int lvl4 = 0;
         public int lvl5 = 0;
-
 
         public Form1(int Apromena)
         {
             InitializeComponent();
             lvl2 = Apromena;
             _soundPlayer = new SoundPlayer("music/sneaky_snitch.wav");
+            _moo = new SoundPlayer("music/moo.wav");
         }
         bool Potvrzení_vygenerování = false;
 
@@ -51,7 +53,7 @@ namespace WindowsFormsApp7
             no_vol.Top = 150;
             no_vol.Left = 95;
             no_vol.Font = SmallFont;
-            no_vol.Text = "Time lessG";
+            no_vol.Text = "Time less";
             no_vol.Size = new Size(180, 180);
             no_vol.ForeColor = Color.Red;
             no_vol.Image = Image.FromFile(path);
@@ -95,7 +97,7 @@ namespace WindowsFormsApp7
         private void Start_fucntion()
         {
             
-            this.Size = new Size(350, 500);
+            this.Size = new Size(337, 540);
 
             Novy_Label.Hide();
             Novy_button.Hide();
@@ -106,6 +108,7 @@ namespace WindowsFormsApp7
 
             while (Potvrzení_vygenerování == false)
             {
+
                 this.Controls.Add(Nadpis);
                 Nadpis.Text = "Levely";
                 Nadpis.Location = new Point(125, 10);
@@ -126,7 +129,7 @@ namespace WindowsFormsApp7
                 Level2.Top = 180;
                 Level2.Left = 95;
                 Level2.Font = SmallFont;
-                Level2.Text = "No time";
+                Level2.Text = "Timeless";
                 Level2.Size = new Size(150, 75);
                 Level2.ForeColor = Color.Red;
 
@@ -187,7 +190,7 @@ namespace WindowsFormsApp7
             Novy_button2.Show();
             Novy_button3.Show();
             no_vol.Hide();
-            this.Size = new Size(359, 454);
+            this.Size = new Size(321, 540);
         }
 
         protected void Fucking_button_Click1(object sender, EventArgs e)
@@ -257,7 +260,6 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
             this.Size = new Size(335, 540);
             label1.Hide();
             label2.Hide();
@@ -300,6 +302,8 @@ namespace WindowsFormsApp7
 
         private void Form1_Load(object sender, EventArgs e)
         {
+                _moo.Play();
+                Thread.Sleep(2500);
                 _soundPlayer.PlayLooping();
         }
 
