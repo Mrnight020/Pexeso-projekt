@@ -56,7 +56,7 @@ namespace WindowsFormsApp7
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 form = new Form1();
+            Form1 form = new Form1(0);
             form.Show();
         }
     }

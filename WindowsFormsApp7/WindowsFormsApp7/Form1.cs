@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace WindowsFormsApp7
 {
     public partial class Form1 : Form
     {
+        private SoundPlayer _soundPlayer;
         public int lvl2 = 0;
         public int lvl3 = 0;
         public int lvl4 = 0;
@@ -22,7 +24,7 @@ namespace WindowsFormsApp7
         {
             InitializeComponent();
             lvl2 = Apromena;
- 
+            _soundPlayer = new SoundPlayer("music/sneaky_snitch.wav");
         }
         bool Potvrzení_vygenerování = false;
 
@@ -42,7 +44,8 @@ namespace WindowsFormsApp7
 
         private void Start_fucntion()
         {
-            this.Size = new Size(359, 654);
+            
+            this.Size = new Size(350, 500);
 
             Novy_Label.Hide();
             Novy_button.Hide();
@@ -71,36 +74,36 @@ namespace WindowsFormsApp7
                 Level2.Top = 180;
                 Level2.Left = 95;
                 Level2.Font = SmallFont;
-                Level2.Text = "LimitlessTime";
+                Level2.Text = "No time";
                 Level2.Size = new Size(150, 75);
                 Level2.ForeColor = Color.Red;
 
-                this.Controls.Add(Level3);
-                Level3.Click += new EventHandler(Level_3);
-                Level3.Top = 270;
-                Level3.Left = 95;
-                Level3.Font = SmallFont;
-                Level3.Text = "level 2";
-                Level3.Size = new Size(150, 75);
-                Level3.ForeColor = Color.Red;
+                //this.Controls.Add(Level3);
+                //Level3.Click += new EventHandler(Level_3);
+                //Level3.Top = 270;
+                //Level3.Left = 95;
+                //Level3.Font = SmallFont;
+                //Level3.Text = "level 2";
+                //Level3.Size = new Size(150, 75);
+                //Level3.ForeColor = Color.Red;
 
-                this.Controls.Add(Level4);
-                Level4.Click += new EventHandler(Level_4);
-                Level4.Top = 360;
-                Level4.Left = 95;
-                Level4.Font = SmallFont;
-                Level4.Text = "level 3";
-                Level4.Size = new Size(150, 75);
-                Level4.ForeColor = Color.Red;
+                //this.Controls.Add(Level4);
+                //Level4.Click += new EventHandler(Level_4);
+                //Level4.Top = 360;
+                //Level4.Left = 95;
+                //Level4.Font = SmallFont;
+                //Level4.Text = "level 3";
+                //Level4.Size = new Size(150, 75);
+                //Level4.ForeColor = Color.Red;
 
-                this.Controls.Add(Level5);
-                Level5.Click += new EventHandler(Level_5);
-                Level5.Top = 450;
-                Level5.Left = 95;
-                Level5.Font = SmallFont;
-                Level5.Text = "level 4";
-                Level5.Size = new Size(150, 75);
-                Level5.ForeColor = Color.Red;
+                //this.Controls.Add(Level5);
+                //Level5.Click += new EventHandler(Level_5);
+                //Level5.Top = 450;
+                //Level5.Left = 95;
+                //Level5.Font = SmallFont;
+                //Level5.Text = "level 4";
+                //Level5.Size = new Size(150, 75);
+                //Level5.ForeColor = Color.Red;
 
                 this.Controls.Add(back_X);
                 back_X.Click += new EventHandler(Back_X);
@@ -111,6 +114,7 @@ namespace WindowsFormsApp7
                 back_X.Size = new Size(75, 32);
                 back_X.ForeColor = Color.Red;
                 Potvrzení_vygenerování = true;
+
             }
 
             Nadpis.Show();
@@ -162,26 +166,18 @@ namespace WindowsFormsApp7
         }
         protected void Level_2(object sender, EventArgs e)
         {
-            if (lvl2 == 1)
-            {
-                Level_2 second = new Level_2();
-                second.Show();
-            }
-            else
-            {
-                MessageBox.Show("zvladni prvne prvni level more");
-            }
+
         }
-        protected void Level_3(object sender, EventArgs e)
-        {
-            Level_3 third = new Level_3();
-            third.Show();
-        }
-        protected void Level_4(object sender, EventArgs e)
-        {
-            Level_4 Fourth = new Level_4();
-            Fourth.Show();
-        }
+        //protected void Level_3(object sender, EventArgs e)
+        //{
+        //    Level_3 third = new Level_3();
+        //    third.Show();
+        //}
+        //protected void Level_4(object sender, EventArgs e)
+        //{
+        //    Level_4 Fourth = new Level_4();
+        //    Fourth.Show();
+        //}
         protected void Level_5(object sender, EventArgs e)
         {
             Level_5 Fifth = new Level_5();
@@ -195,6 +191,7 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             this.Size = new Size(359, 500);
             label1.Hide();
             label2.Hide();
@@ -233,7 +230,12 @@ namespace WindowsFormsApp7
             Novy_button3.Text = "Exit";
             Novy_button3.Size = new Size(150, 75);
             Novy_button3.ForeColor = Color.Red;
-            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            _soundPlayer.PlayLooping();
+           
         }
 
     }
