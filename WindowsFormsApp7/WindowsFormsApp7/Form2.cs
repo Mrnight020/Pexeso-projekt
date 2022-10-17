@@ -23,7 +23,7 @@ namespace WindowsFormsApp7
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cas = 150;
+            Cas = 100;
             Level_1 level = new Level_1(Cas);
             level.Show();
             this.Hide();
@@ -31,7 +31,7 @@ namespace WindowsFormsApp7
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Cas = 120;
+            Cas = 70;
             Level_1 level = new Level_1(Cas);
             level.Show();
             this.Hide();
@@ -39,7 +39,7 @@ namespace WindowsFormsApp7
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Cas = 90;
+            Cas = 45;
             Level_1 level = new Level_1(Cas);
             level.Show();
             this.Hide();
@@ -47,7 +47,7 @@ namespace WindowsFormsApp7
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Cas = 31;
+            Cas = 25;
             Level_1 level = new Level_1(Cas);
             level.Show();
             this.Hide();

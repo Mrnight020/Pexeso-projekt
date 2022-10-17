@@ -111,13 +111,13 @@ namespace WindowsFormsApp7
 
                 this.Controls.Add(Nadpis);
                 Nadpis.Text = "Levely";
-                Nadpis.Location = new Point(125, 10);
+                Nadpis.Location = new Point(125, 70);
                 Nadpis.ForeColor = Color.White;
                 Nadpis.Font = SmallFont;
 
                 this.Controls.Add(Level1);
                 Level1.Click += new EventHandler(Level_1);
-                Level1.Top = 90;
+                Level1.Top = 140;
                 Level1.Left = 95;
                 Level1.Font = SmallFont;
                 Level1.Text = "Speedrun";
@@ -126,7 +126,7 @@ namespace WindowsFormsApp7
 
                 this.Controls.Add(Level2);
                 Level2.Click += new EventHandler(Level_2);
-                Level2.Top = 180;
+                Level2.Top = 250;
                 Level2.Left = 95;
                 Level2.Font = SmallFont;
                 Level2.Text = "Timeless";
@@ -268,13 +268,13 @@ namespace WindowsFormsApp7
 
             this.Controls.Add(Novy_Label);
             Novy_Label.Text = "MENU";
-            Novy_Label.Location = new Point(125, 10);
+            Novy_Label.Location = new Point(125, 60);
             Novy_Label.ForeColor = Color.White;
             Novy_Label.Font = SmallFont;
 
             this.Controls.Add(Novy_button);
             Novy_button.Click += new EventHandler(Fucking_button_Click1);
-            Novy_button.Top = 60;
+            Novy_button.Top = 120;
             Novy_button.Left = 95;
             Novy_button.Font = SmallFont;
             Novy_button.Text = "Start";
@@ -283,7 +283,7 @@ namespace WindowsFormsApp7
 
             this.Controls.Add(Novy_button2);
             Novy_button2.Click += new EventHandler(Fucking_button_Click2);
-            Novy_button2.Top = 160;
+            Novy_button2.Top = 220;
             Novy_button2.Left = 95;
             Novy_button2.Font = SmallFont;
             Novy_button2.Text = "Settings";
@@ -292,7 +292,7 @@ namespace WindowsFormsApp7
 
             this.Controls.Add(Novy_button3);
             Novy_button3.Click += new EventHandler(Fucking_button_Click3);
-            Novy_button3.Top = 260;
+            Novy_button3.Top = 320;
             Novy_button3.Left = 95;
             Novy_button3.Font = SmallFont;
             Novy_button3.Text = "Exit";
@@ -307,5 +307,9 @@ namespace WindowsFormsApp7
                 _soundPlayer.PlayLooping();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

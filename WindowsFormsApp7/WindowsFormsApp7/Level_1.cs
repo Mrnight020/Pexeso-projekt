@@ -71,8 +71,8 @@ namespace WindowsFormsApp7
             for (int i = 0; i < 12; i++)
             {
                 PictureBox newPic = new PictureBox();
-                newPic.Height = 50;
-                newPic.Width = 50;
+                newPic.Height = 110;
+                newPic.Width = 110;
                 newPic.BackColor = Color.LightGray;
                 newPic.SizeMode = PictureBoxSizeMode.StretchImage;
                 newPic.Click += NewPic_Click;
@@ -84,13 +84,13 @@ namespace WindowsFormsApp7
                     newPic.Left = leftPos;
                     newPic.Top = topPos;
                     this.Controls.Add(newPic);
-                    leftPos = leftPos + 60;
+                    leftPos = leftPos + 140;
                 }
 
                 if (rows == 3)
                 {
                     leftPos = 20;
-                    topPos += 60;
+                    topPos += 140;
                     rows = 0;
                 }
             }
@@ -124,6 +124,7 @@ namespace WindowsFormsApp7
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
                     MessageBox.Show("Winner winner chicken dinner", "Moo Says: ");
                     promena = promena++;
+                    GameTimer.Stop();
                 }
 
 
