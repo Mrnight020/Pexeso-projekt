@@ -12,15 +12,16 @@ namespace WindowsFormsApp7
 {
     public partial class Form1 : Form
     {
-        public bool Alvl_1 = false;
-        public bool Alvl_2 = false;
-        public bool Alvl_3 = false;
-        public bool Alvl_4 = false;
+        public int lvl2 = 0;
+        public int lvl3 = 0;
+        public int lvl4 = 0;
+        public int lvl5 = 0;
 
 
-        public Form1()
+        public Form1(int Apromena)
         {
             InitializeComponent();
+            lvl2 = Apromena;
  
         }
         bool Potvrzení_vygenerování = false;
@@ -150,7 +151,7 @@ namespace WindowsFormsApp7
         
         protected void Fucking_button_Click3(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         protected void Level_1(object sender, EventArgs e)
@@ -161,10 +162,14 @@ namespace WindowsFormsApp7
         }
         protected void Level_2(object sender, EventArgs e)
         {
-            if(Alvl_1 == false)
+            if (lvl2 == 1)
             {
                 Level_2 second = new Level_2();
                 second.Show();
+            }
+            else
+            {
+                MessageBox.Show("zvladni prvne prvni level more");
             }
         }
         protected void Level_3(object sender, EventArgs e)

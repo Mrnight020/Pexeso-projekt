@@ -22,6 +22,7 @@ namespace WindowsFormsApp7
             this.BackColor = Color.Black;
         }
 
+        public int promena = 0;
         List<int> numbers = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         string firstChoice;
         string secondChoice;
@@ -122,6 +123,7 @@ namespace WindowsFormsApp7
                 {
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
                     MessageBox.Show("Winner winner chicken dinner");
+                    promena = promena++;
                 }
 
 
@@ -199,7 +201,7 @@ namespace WindowsFormsApp7
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form1 form = new Form1();
+            Form1 form = new Form1(promena);
             form.Show();
         }
     }
