@@ -41,7 +41,57 @@ namespace WindowsFormsApp7
         Button Level3 = new Button();
         Button Level4 = new Button();
         Button Level5 = new Button();
+        PictureBox no_vol = new PictureBox();
+        string path = "pics/no_sound.jpg";
+        bool sound = true;
+        public void set()
+        {
+            this.Controls.Add(no_vol);
+            no_vol.Click += new EventHandler(_No_Vol);
+            no_vol.Top = 150;
+            no_vol.Left = 95;
+            no_vol.Font = SmallFont;
+            no_vol.Text = "No time";
+            no_vol.Size = new Size(180, 180);
+            no_vol.ForeColor = Color.Red;
+            no_vol.Image = Image.FromFile(path);
 
+            no_vol.Show();
+
+        }
+        protected void _No_Vol(object sender, EventArgs e)
+        {
+            if (path == "pics/no_sound.jpg")
+            {
+                path = "pics/sound.png";
+                sound = false;
+                no_vol.Image = Image.FromFile(path);
+                _soundPlayer.Stop();
+            }
+            else
+            {
+                path = "pics/no_sound.jpg";
+                sound = true;
+                no_vol.Image = Image.FromFile(path);
+                _soundPlayer.PlayLooping();
+            }
+        }
+        protected void _Vol(object sender, EventArgs e)
+        {
+
+        }
+
+        public void _show_butt()
+        {
+
+            Nadpis.Show();
+            Level1.Show();
+            Level2.Show();
+            Level3.Show();
+            Level4.Show();
+            Level5.Show();
+            back_X.Show();
+        }
         private void Start_fucntion()
         {
             
@@ -51,6 +101,8 @@ namespace WindowsFormsApp7
             Novy_button.Hide();
             Novy_button2.Hide();
             Novy_button3.Hide();
+
+
 
             while (Potvrzení_vygenerování == false)
             {
@@ -115,14 +167,10 @@ namespace WindowsFormsApp7
                 back_X.ForeColor = Color.Red;
                 Potvrzení_vygenerování = true;
 
+
             }
 
-            Nadpis.Show();
-            Level1.Show();
-            Level2.Show();
-            Level3.Show();
-            Level4.Show();
-            Level5.Show();
+            _show_butt();
         }
 
         private void back()
@@ -133,23 +181,39 @@ namespace WindowsFormsApp7
             Level3.Hide();
             Level4.Hide();
             Level5.Hide();
-
+            back_X.Hide();
             Novy_Label.Show();
             Novy_button.Show();
             Novy_button2.Show();
             Novy_button3.Show();
+            no_vol.Hide();
             this.Size = new Size(359, 454);
         }
 
         protected void Fucking_button_Click1(object sender, EventArgs e)
         {
+            _show_butt();
             Start_fucntion();
 
         }
 
         protected void Fucking_button_Click2(object sender, EventArgs e)
         {
+            Novy_Label.Hide();
+            Novy_button.Hide();
+            Novy_button2.Hide();
+            Novy_button3.Hide();
+            back_X.Show();
 
+            this.Controls.Add(back_X);
+            back_X.Click += new EventHandler(Back_X);
+            back_X.Top = 10;
+            back_X.Left = 10;
+            back_X.Font = SmallFont;
+            back_X.Text = "Back";
+            back_X.Size = new Size(75, 32);
+            back_X.ForeColor = Color.Red;
+            set();
         }
 
         
@@ -236,8 +300,7 @@ namespace WindowsFormsApp7
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            _soundPlayer.PlayLooping();
-           
+                _soundPlayer.PlayLooping();
         }
 
     }
