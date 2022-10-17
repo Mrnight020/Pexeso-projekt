@@ -48,7 +48,10 @@ namespace WindowsFormsApp7
 
             if (countDownTime < 1)
             {
-                GameOver("Times Up, You Lose");
+                Form5 form = new Form5();
+                form.StartPosition = FormStartPosition.CenterScreen;
+                form.Show();
+                GameTimer.Stop();
 
                 foreach (PictureBox x in pictures)
                 {

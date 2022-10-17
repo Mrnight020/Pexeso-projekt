@@ -179,3 +179,4 @@ C:\Users\stulh\Source\Repos\Pexeso-projekt1234\WindowsFormsApp7\WindowsFormsApp7
 C:\Users\stulh\Source\Repos\Pexeso-projekt1234\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.csproj.CoreCompileInputs.cache
 C:\Users\stulh\Source\Repos\Pexeso-projekt1234\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.exe
 C:\Users\stulh\Source\Repos\Pexeso-projekt1234\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.pdb
+C:\Users\stulh\source\repos\Pexeso-projekt1234\WindowsFormsApp7\WindowsFormsApp7\obj\Debug\WindowsFormsApp7.Form5.resources
