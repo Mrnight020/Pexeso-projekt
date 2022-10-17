@@ -51,7 +51,7 @@ namespace WindowsFormsApp7
             no_vol.Top = 150;
             no_vol.Left = 95;
             no_vol.Font = SmallFont;
-            no_vol.Text = "No time";
+            no_vol.Text = "Time lessG";
             no_vol.Size = new Size(180, 180);
             no_vol.ForeColor = Color.Red;
             no_vol.Image = Image.FromFile(path);
@@ -258,7 +258,7 @@ namespace WindowsFormsApp7
         private void button1_Click(object sender, EventArgs e)
         {
             
-            this.Size = new Size(359, 500);
+            this.Size = new Size(335, 540);
             label1.Hide();
             label2.Hide();
             button1.Hide();
@@ -272,7 +272,7 @@ namespace WindowsFormsApp7
 
             this.Controls.Add(Novy_button);
             Novy_button.Click += new EventHandler(Fucking_button_Click1);
-            Novy_button.Top = 90;
+            Novy_button.Top = 60;
             Novy_button.Left = 95;
             Novy_button.Font = SmallFont;
             Novy_button.Text = "Start";
@@ -281,7 +281,7 @@ namespace WindowsFormsApp7
 
             this.Controls.Add(Novy_button2);
             Novy_button2.Click += new EventHandler(Fucking_button_Click2);
-            Novy_button2.Top = 190;
+            Novy_button2.Top = 160;
             Novy_button2.Left = 95;
             Novy_button2.Font = SmallFont;
             Novy_button2.Text = "Settings";
@@ -290,7 +290,7 @@ namespace WindowsFormsApp7
 
             this.Controls.Add(Novy_button3);
             Novy_button3.Click += new EventHandler(Fucking_button_Click3);
-            Novy_button3.Top = 290;
+            Novy_button3.Top = 260;
             Novy_button3.Left = 95;
             Novy_button3.Font = SmallFont;
             Novy_button3.Text = "Exit";

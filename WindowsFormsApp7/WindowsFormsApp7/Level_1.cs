@@ -122,7 +122,7 @@ namespace WindowsFormsApp7
                 if (picture_counter == (((pictures.Count/2) - 1)) && picB.Image == null)
                 {
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
-                    MessageBox.Show("Winner winner chicken dinner");
+                    MessageBox.Show("Winner winner chicken dinner", "Moo Says: ");
                     promena = promena++;
                 }
 
