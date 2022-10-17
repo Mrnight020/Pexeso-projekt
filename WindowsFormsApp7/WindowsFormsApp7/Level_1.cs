@@ -44,7 +44,7 @@ namespace WindowsFormsApp7
             }
             countDownTime--;
 
-            lblTimeLeft.Text = "Time Left: " + countDownTime;
+            lblTimeLeft.Text = "Čas: " + countDownTime;
 
             if (countDownTime < 1)
             {
@@ -123,8 +123,8 @@ namespace WindowsFormsApp7
                 {
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
                     Form4 form4 = new Form4();
+                    form4.StartPosition = FormStartPosition.CenterScreen;
                     form4.Show();
-                    this.Hide();
                     timer2.Start();
                     promena = promena++;
                     GameTimer.Stop();
@@ -159,8 +159,8 @@ namespace WindowsFormsApp7
             }
 
             tries = 0;
-            lblStatus.Text = "Mismatched: " + tries + " times.";
-            lblTimeLeft.Text = "Time Left: " + cas;
+            lblStatus.Text = "Počet pokusů: " + tries;
+            lblTimeLeft.Text = "Čas: " + cas;
             gameOver = false;
             GameTimer.Start();
             countDownTime = cas;
@@ -178,7 +178,7 @@ namespace WindowsFormsApp7
             else
             {
                 tries++;
-                lblStatus.Text = "Mismatched " + tries + " times.";
+                lblStatus.Text = "Počet pokusů: " + tries;
             }
 
             firstChoice = null;

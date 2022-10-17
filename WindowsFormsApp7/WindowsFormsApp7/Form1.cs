@@ -110,7 +110,7 @@ namespace WindowsFormsApp7
             {
 
                 this.Controls.Add(Nadpis);
-                Nadpis.Text = "Levely";
+                Nadpis.Text = "Levels";
                 Nadpis.Location = new Point(125, 70);
                 Nadpis.ForeColor = Color.White;
                 Nadpis.Font = SmallFont;
@@ -250,7 +250,7 @@ namespace WindowsFormsApp7
             Novy_button2.Top = 220;
             Novy_button2.Left = 95;
             Novy_button2.Font = SmallFont;
-            Novy_button2.Text = "Settings";
+            Novy_button2.Text = "Nastavení";
             Novy_button2.Size = new Size(150, 75);
             Novy_button2.ForeColor = Color.Red;
 
@@ -259,7 +259,7 @@ namespace WindowsFormsApp7
             Novy_button3.Top = 320;
             Novy_button3.Left = 95;
             Novy_button3.Font = SmallFont;
-            Novy_button3.Text = "Exit";
+            Novy_button3.Text = "Ukončit";
             Novy_button3.Size = new Size(150, 75);
             Novy_button3.ForeColor = Color.Red;
         }

@@ -87,7 +87,9 @@ namespace WindowsFormsApp7
                 if (picture_counter == (((pictures.Count / 2) - 1)) && picB.Image == null)
                 {
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
-                    MessageBox.Show("Winner winner chicken dinner", "Moo Says: ");
+                    Form4 form4 = new Form4();
+                    form4.StartPosition = FormStartPosition.CenterScreen;
+                    form4.Show();
                     promena = promena++;
                 }
 
@@ -122,7 +124,7 @@ namespace WindowsFormsApp7
             }
 
             tries = 0;
-            lblStatus.Text = "Mismatched: " + tries + " times.";
+            lblStatus.Text = "Počet pokusů: " + tries;
 
         }
 
@@ -137,7 +139,7 @@ namespace WindowsFormsApp7
             else
             {
                 tries++;
-                lblStatus.Text = "Mismatched " + tries + " times.";
+                lblStatus.Text = "Počet pokusů: " + tries;
             }
 
             firstChoice = null;
