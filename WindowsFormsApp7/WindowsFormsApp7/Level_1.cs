@@ -122,7 +122,10 @@ namespace WindowsFormsApp7
                 if (picture_counter == (((pictures.Count/2) - 1)) && picB.Image == null)
                 {
                     picB.Image = Image.FromFile("pics/" + (string)picB.Tag + ".png");
-                    MessageBox.Show("Winner winner chicken dinner", "Moo Says: ");
+                    Form4 form4 = new Form4();
+                    form4.Show();
+                    this.Hide();
+                    timer2.Start();
                     promena = promena++;
                     GameTimer.Stop();
                 }
@@ -202,6 +205,11 @@ namespace WindowsFormsApp7
             this.Close();
             Form1 form = new Form1(promena);
             form.Show();
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.Show();
         }
     }
 }
