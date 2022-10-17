@@ -133,32 +133,6 @@ namespace WindowsFormsApp7
                 Level2.Size = new Size(150, 75);
                 Level2.ForeColor = Color.Red;
 
-                //this.Controls.Add(Level3);
-                //Level3.Click += new EventHandler(Level_3);
-                //Level3.Top = 270;
-                //Level3.Left = 95;
-                //Level3.Font = SmallFont;
-                //Level3.Text = "level 2";
-                //Level3.Size = new Size(150, 75);
-                //Level3.ForeColor = Color.Red;
-
-                //this.Controls.Add(Level4);
-                //Level4.Click += new EventHandler(Level_4);
-                //Level4.Top = 360;
-                //Level4.Left = 95;
-                //Level4.Font = SmallFont;
-                //Level4.Text = "level 3";
-                //Level4.Size = new Size(150, 75);
-                //Level4.ForeColor = Color.Red;
-
-                //this.Controls.Add(Level5);
-                //Level5.Click += new EventHandler(Level_5);
-                //Level5.Top = 450;
-                //Level5.Left = 95;
-                //Level5.Font = SmallFont;
-                //Level5.Text = "level 4";
-                //Level5.Size = new Size(150, 75);
-                //Level5.ForeColor = Color.Red;
 
                 this.Controls.Add(back_X);
                 back_X.Click += new EventHandler(Back_X);
@@ -237,16 +211,6 @@ namespace WindowsFormsApp7
             this.Hide();
             form.Show();
         }
-        //protected void Level_3(object sender, EventArgs e)
-        //{
-        //    Level_3 third = new Level_3();
-        //    third.Show();
-        //}
-        //protected void Level_4(object sender, EventArgs e)
-        //{
-        //    Level_4 Fourth = new Level_4();
-        //    Fourth.Show();
-        //}
         protected void Level_5(object sender, EventArgs e)
         {
             Level_5 Fifth = new Level_5();

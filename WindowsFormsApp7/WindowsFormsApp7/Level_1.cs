@@ -145,9 +145,7 @@ namespace WindowsFormsApp7
         }
         private void RestartGame()
         {
-            // randomise the original list
             var randomList = numbers.OrderBy(x => Guid.NewGuid()).ToList();
-            // assign the random list to the original
             numbers = randomList;
             picture_counter = 0;
 
