@@ -46,6 +46,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form5";
             this.Text = "Form5";
+            this.Click += new System.EventHandler(this.Form5_Click);
             this.ResumeLayout(false);
 
         }

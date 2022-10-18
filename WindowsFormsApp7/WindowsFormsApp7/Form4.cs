@@ -31,5 +31,15 @@ namespace WindowsFormsApp7
             _soundPlayer.PlayLooping();
             this.Close();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
